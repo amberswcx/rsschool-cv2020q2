@@ -1,1 +1,0 @@
-https://amberswcx.github.io/rsschool-cv/cv
