@@ -36,3 +36,12 @@ function reverse(n) {
 	return +reversedN;
 }
 ```
+
+### EDUCATION
+* HTML Academy Interactive courses
+* Stepik course "JavaScript for beginners"
+* Stepik course "Art of Soft Skills"
+* Stepik course "Introduction to Linux" (in progress)
+
+### LANGUAGES
+* English A2
