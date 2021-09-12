@@ -15,46 +15,44 @@
 			<h2 class="header-logo__title">Pavel Orlov</h2>
 			<h3 class="header-logo__description">Front-End Junior Web Developer</h3>
 		</div>
-
 	</header>
-	<main>
-		<section>
-			<article>
-				<h3>Work experience</h3>
-				<p>I have started learning html and css about fifteen years ago but did not finish.</p>
-				<p>Two years ago I started learning at HTML Academy. At Academy I learned all interactive courses. Then I decided to learn JavaScript and become front-end web developer.</p>
-				<p>I have no work experience in IT but I would like to become good specialist. I work in the power industry now and combine work and study. I want to work in front-end or back-end development in future.</p>
-			</article>
-			<article>
-				<h3>Contacts</h3>
-				<ul>
-					<li>amberswcx@gmail.com</li>
-					<li>+7 991 197 47 47</li>
-					<li>Uva, Udmurtia, Russia</li>
-					<li>https://github.com/amberswcx</li>
+	<main class="cv">
+		<section class="cv__left-column">
+			<article class="cv-block">
+				<h3 class="cv-block__header">Education</h3>
+				<ul class="cv-block__list">
+					<li><span>2020-2021:</span> HTML Academy Interactive courses</li>
+					<li><span>2021:</span> Stepik course "JavaScript for beginners"</li>
+					<li><span>2021:</span> Stepik course "Art of Soft Skills"</li>
+					<li><span>2021:</span> Stepik course "Introduction to Linux" (in progress)</li>
 				</ul>
 			</article>
-			<article>
-				<h3>Languages</h3>
-				<ul>
+			<article class="cv-block">
+				<h3 class="cv-block__header">Contacts</h3>
+				<ul class="cv-block__list">
+					<li><span>Email:</span> amberswcx@gmail.com</li>
+					<li><span>Phone:</span> +7 991 197 47 47</li>
+					<li><span>Address:</span> Uva, Udmurtia, Russia</li>
+					<li><span>Github:</span> https://github.com/amberswcx</li>
+				</ul>
+			</article>
+			<article class="cv-block">
+				<h3 class="cv-block__header">Languages</h3>
+				<ul class="cv-block__list">
 					<li>English A2</li>
 				</ul>
 			</article>
 		</section>
-		<section>
-			<article>
-				<h3>Education</h3>
-				<ul>
-					<li>HTML Academy Interactive courses</li>
-					<li>Stepik course "JavaScript for beginners"</li>
-					<li>Stepik course "Art of Soft Skills"</li>
-					<li>Stepik course "Introduction to Linux" (in progress)</li>
-				</ul>
+		<section class="cv__right-column">
+			<article class="cv-block">
+				<h3 class="cv-block__header">Work experience</h3>
+				<p class="cv-block__text">I have started learning html and css about fifteen years ago but did not finish.</p>
+				<p class="cv-block__text">Two years ago I started learning at HTML Academy. At Academy I learned all interactive courses. Then I decided to learn JavaScript and become front-end web developer.</p>
+				<p class="cv-block__text">I have no work experience in IT but I would like to become good specialist. I work in the power industry now and combine work and study. I want to work in front-end or back-end development in future.</p>
 			</article>
-			<article>
-				<h3>Examle of my code</h3>
-				<pre>
-					<code>
+			<article class="cv-block">
+				<h3 class="cv-block__header">Examle of my code</h3>
+				<pre class="cv-block__code">
 function reverse(n) {
 	let reversedN = '';
 
@@ -68,19 +66,131 @@ function reverse(n) {
 	}
 	return +reversedN;
 }
-					</code>
 				</pre>
 			</article>
-			<article>
-				<h3>Skills</h3>
-				<ul>
-					<li>HTML</li>
-					<li>CSS</li>
-					<li>EMMET</li>
-					<li>JavaScipt</li>
-					<li>Less</li>
-					<li>Sass/SCSS</li>
-					<li>Bootstrap</li>
+			<article class="cv-block">
+				<h3 class="cv-block__header">Skills</h3>
+				<ul class="cv-block__list cv-block__list_skills">
+					<li>
+						<span>HTML</span>
+						<div>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span></span>
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<span>CSS</span>
+						<div>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span></span>
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<span>EMMET</span>
+						<div>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<span>JavaScipt</span>
+						<div>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<span>Less</span>
+						<div>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<span>Sass/SCSS</span>
+						<div>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<span>Bootstrap</span>
+						<div>
+							<span class="learned"></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</li>
+					<li>
+						<span>BEM</span>
+						<div>
+							<span class="learned"></span>
+							<span class="learned"></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</li>
 				</ul>
 			</article>
 		</section>

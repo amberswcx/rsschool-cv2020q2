@@ -10,7 +10,7 @@
   border-radius: 50%;
 }
 
-.header-logo__title {
+.cv-block__header, .header-logo__title {
   margin: 0;
   font-weight: 600;
   color: #ff5a5f;
@@ -97,6 +97,73 @@ body {
   font-size: 20px;
   line-height: 46px;
   border-radius: 200px;
+}
+
+.cv {
+  display: flex;
+  flex-direction: row;
+  column-gap: 62px;
+  padding: 0 80px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.cv__right-column {
+  flex-basis: 800px;
+}
+
+.cv-block {
+  padding-bottom: 50px;
+}
+
+.cv-block__header {
+  font-size: 32px;
+  padding-bottom: 24px;
+}
+
+.cv-block__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cv-block__list li {
+  padding-bottom: 15px;
+}
+.cv-block__list li span {
+  display: block;
+  font-weight: 600;
+}
+
+.cv-block__list_skills li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cv-block__list_skills li div {
+  display: flex;
+  flex-direction: row;
+  column-gap: 13px;
+}
+.cv-block__list_skills li div span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #c9c9c9;
+}
+.cv-block__list_skills li div span.learned {
+  background: #ff5a5f;
+}
+
+.cv-block__text {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.cv-block__code {
+  font-size: 14px;
+  font-family: monospace;
+  margin: 0;
+  padding-left: 28px;
 }
 
 /*# sourceMappingURL=style.css.map */
