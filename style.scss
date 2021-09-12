@@ -1,7 +1,7 @@
-$primary-color: #ff5a5f;
+$primary-color: #ff5c00;
 $secondary-color: #333333;
 $complementary-color: #c9c9c9;
-$font: Poppins, sans-serif;
+$font: 'Poppins', sans-serif;
 $header-weight: 600;
 
 %pseudo-elem {
@@ -46,7 +46,7 @@ body {
 }
 
 .header-title {
- @extend %header-footer-type;
+	@extend %header-footer-type;
 	font-size: 32px;
 }
 
@@ -121,18 +121,27 @@ body {
 .cv {
 	display: flex;
 	flex-direction: row;
-	column-gap: 62px;
 	padding: 0 80px;
 	font-size: 16px;
 	line-height: 150%;
 }
 
 .cv__left-column {
-
+	padding-right: 20px;
+	border-right: 4px solid $complementary-color;
 }
 
 .cv__right-column {
 	flex-basis: 800px;
+	padding-left: 38px;
+
+	.cv-block:not(:last-child) {
+		border-bottom: 4px solid $complementary-color;
+	}
+
+	.cv-block:not(:first-child) {
+		padding-top: 35px;
+	}
 }
 
 .cv-block {
@@ -165,6 +174,7 @@ body {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		column-gap: 15px;
 
 		div {
 			display: flex;
@@ -210,9 +220,11 @@ body {
 	text-decoration: none;
 	color: #000000;
 	font-weight: $header-weight;
+
 	&:visited {
 		text-decoration: none;
 	}
+
 	&:hover {
 		color: #ffffff;
 	}
