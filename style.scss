@@ -40,7 +40,6 @@ $header-weight: 600;
 }
 
 body {
-	max-width: 1120px;
 	margin: 0 auto;
 	font-family: $font;
 }
@@ -119,6 +118,8 @@ body {
 }
 
 .cv {
+	margin: 0 auto;
+	max-width: 1120px;
 	display: flex;
 	flex-direction: row;
 	padding: 0 80px;

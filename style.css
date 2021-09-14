@@ -32,7 +32,6 @@
 }
 
 body {
-  max-width: 1120px;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
 }
@@ -104,6 +103,8 @@ body {
 }
 
 .cv {
+  margin: 0 auto;
+  max-width: 1120px;
   display: flex;
   flex-direction: row;
   padding: 0 80px;
