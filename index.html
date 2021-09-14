@@ -8,6 +8,9 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="stylesheet" href="monokai.min.css">
+	<script src="highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
 </head>
 <body>
 	<header class="header">
@@ -56,7 +59,7 @@
 			</article>
 			<article class="cv-block">
 				<h3 class="cv-block__header">Example of my code</h3>
-				<pre class="cv-block__code">
+				<pre class="cv-block__code"><code class="javascript">
 function reverse(n) {
 	let reversedN = '';
 
@@ -70,7 +73,7 @@ function reverse(n) {
 	}
 	return +reversedN;
 }
-				</pre>
+				</code></pre>
 			</article>
 			<article class="cv-block">
 				<h3 class="cv-block__header">Skills</h3>
