@@ -200,6 +200,9 @@ body {
 .footer__link:hover {
   color: #ffffff;
 }
+.footer__link i {
+  font-size: 28px;
+}
 
 .footer__logo {
   height: 32px;
