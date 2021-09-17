@@ -32,6 +32,10 @@
   text-transform: uppercase;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
@@ -39,6 +43,29 @@ body {
 
 .header-title {
   font-size: 32px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li {
+  font-size: 20px;
+}
+.menu ul li a {
+  color: #ffffff;
+  font-weight: 400;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+.menu ul li a:hover {
+  font-size: 25px;
+  transition-duration: 0.5s;
 }
 
 .header-logo__outer-frame {
