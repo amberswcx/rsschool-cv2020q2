@@ -34,6 +34,7 @@ $header-weight: 600;
 %header-footer-type {
 	@extend %bg-logo;
 	width: 100%;
+	min-width: 320px;
 	height: 80px;
 	line-height: 80px;
 	text-transform: uppercase;
@@ -120,6 +121,7 @@ body {
 .cv {
 	margin: 0 auto;
 	max-width: 1120px;
+	min-width: 320px;
 	display: flex;
 	flex-direction: row;
 	padding: 0 80px;
@@ -133,7 +135,6 @@ body {
 }
 
 .cv__right-column {
-	flex-basis: 800px;
 	padding-left: 38px;
 
 	.cv-block:not(:last-child) {
@@ -142,6 +143,21 @@ body {
 
 	.cv-block:not(:first-child) {
 		padding-top: 35px;
+	}
+}
+
+@media (max-width: 890px) {
+	.cv {
+		display: block;
+		padding: 0 10px;
+		margin: 0 auto;
+	}
+	.cv__left-column {
+		padding-right: 0;
+		border-right: none;
+	}
+	.cv__right-column {
+		padding-left: 0;
 	}
 }
 
@@ -196,18 +212,24 @@ body {
 	}
 }
 
+@media (max-width: 420px) {
+	.cv-block__list_skills {
+		li {
+			display: block;
+		}
+	}
+}
 
 .cv-block__text {
 	margin: 0;
 	margin-bottom: 15px;
+	text-align: justify;
 }
 
 .cv-block__code {
 	font-size: 16px;
 	font-family: monospace;
 	margin: 0;
-	padding-left: 28px;
-	padding-right: 28px;
 }
 
 .footer {
