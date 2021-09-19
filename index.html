@@ -2,27 +2,44 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>CV: Pavel Orlov</title>
 	<link rel="stylesheet"  href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<link rel="stylesheet" href="monokai.min.css">
+	<script src="highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
 </head>
 <body>
 	<header class="header">
 		<h1 class="header-title">CV Resume</h1>
+		<nav class="header-title menu">
+			<ul>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#contacts">Contacts</a></li>
+				<li><a href="#languages">Languages</a></li>
+				<li><a href="#work-experience">Work experience</a></li>
+				<li><a href="#code-example">Example of my code</a></li>
+				<li><a href="#skills">Skills</a></li>
+			</ul>
+		</nav>
 		<div class="header-logo__outer-frame header-logo__middle-frame">
 			<div class="header-logo__inner-frame header-logo__dots">
 				<img src="photos/avatar.jpg" alt="Pavel Orlov" class="header-logo__img">
 			</div>
-			<h2 class="header-logo__title">Pavel Orlov</h2>
-			<h3 class="header-logo__description">Front-End Junior Web Developer</h3>
+			<div class="header-logo__text">
+				<h2 class="header-logo__text_title">Pavel Orlov</h2>
+				<h3 class="header-logo__text_description">Front-End Junior Web Developer</h3>
+			</div>
 		</div>
 	</header>
 	<main class="cv">
 		<section class="cv__left-column">
 			<article class="cv-block">
-				<h3 class="cv-block__header">Education</h3>
+				<h3 class="cv-block__header" id="education">Education</h3>
 				<ul class="cv-block__list">
 					<li><span>2020-2021:</span> HTML Academy Interactive courses</li>
 					<li><span>2021:</span> Stepik course "JavaScript for beginners"</li>
@@ -31,31 +48,31 @@
 				</ul>
 			</article>
 			<article class="cv-block">
-				<h3 class="cv-block__header">Contacts</h3>
+				<h3 class="cv-block__header" id="contacts">Contacts</h3>
 				<ul class="cv-block__list">
-					<li><span>Email:</span> amberswcx@gmail.com</li>
-					<li><span>Phone:</span> +7 991 197 47 47</li>
-					<li><span>Address:</span> Uva, Udmurtia, Russia</li>
-					<li><span>Github:</span> https://github.com/amberswcx</li>
+					<li><span><i class="fas fa-envelope"></i> Email:</span> amberswcx@gmail.com</li>
+					<li><span><i class="fas fa-phone-square-alt"></i> Phone:</span> +7 991 197 47 47</li>
+					<li><span><i class="fas fa-map-marker-alt"></i> Address:</span> Uva, Udmurtia, Russia</li>
+					<li><span><i class="fab fa-github"></i> Github:</span> https://github.com/amberswcx</li>
 				</ul>
 			</article>
 			<article class="cv-block">
-				<h3 class="cv-block__header">Languages</h3>
+				<h3 class="cv-block__header" id="languages">Languages</h3>
 				<ul class="cv-block__list">
-					<li>English A2</li>
+					<li><i class="fas fa-globe"></i> English A2</li>
 				</ul>
 			</article>
 		</section>
 		<section class="cv__right-column">
 			<article class="cv-block">
-				<h3 class="cv-block__header">Work experience</h3>
+				<h3 class="cv-block__header" id="work-experience">Work experience</h3>
 				<p class="cv-block__text">I have started learning html and css about fifteen years ago but did not finish.</p>
 				<p class="cv-block__text">Two years ago I started learning at HTML Academy. At Academy I learned all interactive courses. Then I decided to learn JavaScript and become front-end web developer.</p>
 				<p class="cv-block__text">I have no work experience in IT but I would like to become good specialist. I work in the power industry now and combine work and study. I want to work in front-end or back-end development in future.</p>
 			</article>
 			<article class="cv-block">
-				<h3 class="cv-block__header">Example of my code</h3>
-				<pre class="cv-block__code">
+				<h3 class="cv-block__header" id="code-example">Example of my code</h3>
+				<pre class="cv-block__code"><code class="javascript">
 function reverse(n) {
 	let reversedN = '';
 
@@ -69,13 +86,13 @@ function reverse(n) {
 	}
 	return +reversedN;
 }
-				</pre>
+				</code></pre>
 			</article>
 			<article class="cv-block">
-				<h3 class="cv-block__header">Skills</h3>
+				<h3 class="cv-block__header" id="skills">Skills</h3>
 				<ul class="cv-block__list cv-block__list_skills">
 					<li>
-						<span>HTML</span>
+						<span>HTML <i class="fab fa-html5"></i></span>
 						<div>
 							<span class="learned"></span>
 							<span class="learned"></span>
@@ -90,7 +107,7 @@ function reverse(n) {
 						</div>
 					</li>
 					<li>
-						<span>CSS</span>
+						<span>CSS <i class="fab fa-css3-alt"></i></span>
 						<div>
 							<span class="learned"></span>
 							<span class="learned"></span>
@@ -105,7 +122,7 @@ function reverse(n) {
 						</div>
 					</li>
 					<li>
-						<span>EMMET</span>
+						<span>EMMET <i class="fab fa-html5"></i></span>
 						<div>
 							<span class="learned"></span>
 							<span class="learned"></span>
@@ -120,7 +137,7 @@ function reverse(n) {
 						</div>
 					</li>
 					<li>
-						<span>JavaScript</span>
+						<span>JavaScript <i class="fab fa-js"></i></span>
 						<div>
 							<span class="learned"></span>
 							<span class="learned"></span>
@@ -135,7 +152,7 @@ function reverse(n) {
 						</div>
 					</li>
 					<li>
-						<span>Less</span>
+						<span>Less <i class="fab fa-less"></i></span>
 						<div>
 							<span class="learned"></span>
 							<span class="learned"></span>
@@ -150,7 +167,7 @@ function reverse(n) {
 						</div>
 					</li>
 					<li>
-						<span>Sass/SCSS</span>
+						<span>Sass/SCSS <i class="fab fa-sass"></i></span>
 						<div>
 							<span class="learned"></span>
 							<span class="learned"></span>
@@ -165,7 +182,7 @@ function reverse(n) {
 						</div>
 					</li>
 					<li>
-						<span>Bootstrap</span>
+						<span>Bootstrap <i class="fab fa-bootstrap"></i></span>
 						<div>
 							<span class="learned"></span>
 							<span></span>
@@ -180,7 +197,7 @@ function reverse(n) {
 						</div>
 					</li>
 					<li>
-						<span>BEM</span>
+						<span>BEM <i class="fab fa-html5"></i></span>
 						<div>
 							<span class="learned"></span>
 							<span class="learned"></span>
@@ -200,7 +217,7 @@ function reverse(n) {
 	</main>
 	<footer class="footer">
 		<time datetime="2021" class="footer__date">2021</time>
-		<a href="https://amberswcx.github.io/rsschool-cv/" class="footer__link">My Github</a>
+		<a href="https://amberswcx.github.io/rsschool-cv/" class="footer__link"><i class="fab fa-github"></i></a>
 		<a href="https://rs.school/js/" target="_blank" class="footer__link">
 			<img src="https://rs.school/images/rs_school_js.svg" alt="RS School" class="footer__logo">
 		</a>
