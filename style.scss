@@ -78,8 +78,6 @@ body {
 
 				&:hover {
 					border-bottom: 5px solid #ffffff;
-					transition-duration: 0.5s;
-
 				}
 			}
 		}
@@ -302,6 +300,12 @@ body {
 
 	i {
 		font-size: 28px;
+	}
+
+	img {
+		&:hover {
+			filter: invert(1);
+		}
 	}
 }
 

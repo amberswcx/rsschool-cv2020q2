@@ -68,7 +68,6 @@ body {
 }
 .menu ul li a:hover {
   border-bottom: 5px solid #ffffff;
-  transition-duration: 0.5s;
 }
 
 .header-logo__outer-frame {
@@ -268,6 +267,9 @@ body {
 }
 .footer__link i {
   font-size: 28px;
+}
+.footer__link img:hover {
+  filter: invert(1);
 }
 
 .footer__logo {
