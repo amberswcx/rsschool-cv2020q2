@@ -37,7 +37,7 @@
 		</div>
 	</header>
 	<main class="cv">
-		<section class="cv__left-column">
+		<div class="cv__left-column">
 			<article class="cv-block">
 				<h3 class="cv-block__header" id="education">Education</h3>
 				<ul class="cv-block__list">
@@ -62,8 +62,8 @@
 					<li><i class="fas fa-globe"></i> English A2</li>
 				</ul>
 			</article>
-		</section>
-		<section class="cv__right-column">
+		</div>
+		<div class="cv__right-column">
 			<article class="cv-block">
 				<h3 class="cv-block__header" id="work-experience">Work experience</h3>
 				<p class="cv-block__text">I have started learning html and css about fifteen years ago but did not finish.</p>
@@ -76,11 +76,11 @@
 function reverse(n) {
 	let reversedN = '';
 
-	if (n < 0) {
+	if (n &lt; 0) {
 		n = -n;
 	}
 
-	while (n >= 1) {
+	while (n &gt;= 1) {
 		reversedN += n % 10;
 		n = Math.floor(n / 10);
 	}
@@ -213,7 +213,7 @@ function reverse(n) {
 					</li>
 				</ul>
 			</article>
-		</section>
+		</div>
 	</main>
 	<footer class="footer">
 		<time datetime="2021" class="footer__date">2021</time>
