@@ -10,13 +10,13 @@
   border-radius: 50%;
 }
 
-.cv-block__header, .header-logo__title {
+.cv-block__header, .header-logo__text_title {
   margin: 0;
   font-weight: 600;
   color: #ff5c00;
 }
 
-.header-logo__description, .footer, .header-title {
+.header-logo__text_description, .footer, .header-title {
   margin: 0 auto;
   text-align: center;
   font-weight: 600;
@@ -73,6 +73,7 @@ body {
 
 .header-logo__outer-frame {
   position: relative;
+  min-width: 320px;
   padding-top: 100px;
   padding-bottom: 120px;
   text-align: center;
@@ -119,14 +120,18 @@ body {
   border-radius: 50%;
 }
 
-.header-logo__title {
+.header-logo__text {
+  min-width: 320px;
+  padding: 0 20px;
+}
+
+.header-logo__text_title {
   font-size: 56px;
   padding: 10px 0 10px;
 }
 
-.header-logo__description {
+.header-logo__text_description {
   display: inline-block;
-  height: 46px;
   padding: 0 28px;
   font-size: 20px;
   line-height: 46px;
@@ -162,7 +167,7 @@ body {
 @media (max-width: 890px) {
   .cv {
     display: block;
-    padding: 0 10px;
+    padding: 0 20px;
     margin: 0 auto;
   }
 
@@ -219,6 +224,14 @@ body {
 }
 
 @media (max-width: 420px) {
+  .header-logo__text_title {
+    font-size: 48px;
+  }
+
+  .header-logo__text_description {
+    font-size: 16px;
+  }
+
   .cv-block__list_skills li {
     display: block;
   }
