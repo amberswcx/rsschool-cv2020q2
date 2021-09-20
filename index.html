@@ -17,7 +17,8 @@
 	<header class="header">
 		<h1 class="header-title">CV Resume</h1>
 		<nav class="header-title menu">
-			<ul>
+			<i class="fas fa-bars"></i>
+			<ul class="menu-items">
 				<li><a href="#education">Education</a></li>
 				<li><a href="#contacts">Contacts</a></li>
 				<li><a href="#languages">Languages</a></li>
@@ -26,13 +27,13 @@
 				<li><a href="#skills">Skills</a></li>
 			</ul>
 		</nav>
-		<div class="header-logo__outer-frame header-logo__middle-frame">
-			<div class="header-logo__inner-frame header-logo__dots">
+		<div class="header-logo__dots">
+			<div class="header-logo__frame">
 				<img src="photos/avatar.jpg" alt="Pavel Orlov" class="header-logo__img">
 			</div>
 			<div class="header-logo__text">
-				<h2 class="header-logo__text_title">Pavel Orlov</h2>
-				<h3 class="header-logo__text_description">Front-End Junior Web Developer</h3>
+				<h2 class="header-logo__title">Pavel Orlov</h2>
+				<h3 class="header-logo__description">Front-End Junior Web Developer</h3>
 			</div>
 		</div>
 	</header>
@@ -222,5 +223,17 @@ function reverse(n) {
 			<img src="https://rs.school/images/rs_school_js.svg" alt="RS School" class="footer__logo">
 		</a>
 	</footer>
+	<script>
+		const menuButton = document.querySelector('.fa-bars');
+		const menuItems = document.querySelector('.menu-items');
+
+		menuButton.addEventListener('click', function() {
+			menuButton.classList.toggle('fa-bars');
+			menuButton.classList.toggle('fa-times');
+			menuItems.classList.toggle('visible')
+		});
+
+		// document.addEventListener('')
+	</script>
 </body>
 </html>
