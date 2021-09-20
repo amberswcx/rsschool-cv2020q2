@@ -1,21 +1,7 @@
 $primary-color: #ff5c00;
-$secondary-color: #333333;
 $complementary-color: #c9c9c9;
 $font: 'Poppins', sans-serif;
 $header-weight: 600;
-
-%pseudo-elem {
-	content: '';
-	position: absolute;
-	z-index: -1;
-}
-
-%frame {
-	@extend %pseudo-elem;
-	opacity: 0.1;
-	background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0) 45.83%, rgba(34, 34, 34, 0.44) 100%);
-	border-radius: 50%;
-}
 
 %common-logo {
 	margin: 0;
@@ -46,7 +32,6 @@ html {
 body {
 	margin: 0 auto;
 	font-family: $font;
-	overflow-x: hidden;
 }
 
 .header-title {
@@ -85,36 +70,19 @@ body {
 	}
 }
 
-.header-logo__outer-frame {
+.header-logo__frame {
 	position: relative;
+	top: -100px;
+	z-index: -1;
 	min-width: 320px;
-	padding-top: 100px;
-	padding-bottom: 120px;
+	max-width: 1120px;
+	margin: 0 auto;
 	text-align: center;
-}
-
-.header-logo__outer-frame::before {
-	width: 1100px;
-	height: 1100px;
-	top: -300px;
-	left: calc((100% - 1100px) / 2);
-	@extend %frame;
-}
-
-.header-logo__middle-frame::after {
-	width: 680px;
-	height: 680px;
-	top: calc((1100px - 680px) / 2 - 300px);
-	left: calc((100% - 680px) / 2);
-	@extend %frame;
-}
-
-.header-logo__inner-frame::before {
-	width: 420px;
-	height: 420px;
-	top: calc((1100px - 420px) / 2 - 420px);
-	left: calc((100% - 420px) / 2);
-	@extend %frame;
+	padding: 220px 0;
+	background:
+		radial-gradient(circle closest-side, rgba(255, 255, 255, 0) 48%, rgba(34, 34, 34, 0.044) 100%, rgba(255, 255, 255, 0) 100%),
+		radial-gradient(circle closest-side, rgba(255, 255, 255, 0) 38%, rgba(34, 34, 34, 0.044) 75%, rgba(255, 255, 255, 0) 75%),
+		radial-gradient(circle closest-side, rgba(255, 255, 255, 0) 28%, rgba(34, 34, 34, 0.044) 45%, rgba(255, 255, 255, 0) 45%);
 }
 
 .header-logo__dots {
@@ -122,34 +90,42 @@ body {
 }
 
 .header-logo__dots::after {
-	@extend %pseudo-elem;
+	content: '';
+	position: absolute;
+	z-index: -2;
 	width: 83px;
 	height: 288px;
 	top: 80px;
-	right: -20px;
+	right: calc(47% - 140px);
 	background: url("images/dots.svg") no-repeat;
 	-webkit-background-size: 100%;
 	background-size: 100%;
 }
 
 .header-logo__img {
-	width: 280px;
-	height: 280px;
+	width: 220px;
+	height: 220px;
 	border-radius: 50%;
 }
 
 .header-logo__text {
+	position: relative;
+	top: -330px;
+	box-sizing: border-box;
 	min-width: 320px;
+	max-width: 1120px;
+	text-align: center;
+	margin: 0 auto;
 	padding: 0 20px;
 }
 
-.header-logo__text_title {
+.header-logo__title {
 	@extend %common-logo;
 	font-size: 56px;
-	padding: 10px 0 10px;
+	padding: 10px 0 0;
 }
 
-.header-logo__text_description {
+.header-logo__description {
 	@extend %bg-logo;
 	display: inline-block;
 	padding: 0 28px;
@@ -160,6 +136,8 @@ body {
 
 .cv {
 	margin: 0 auto;
+	margin-top: -280px;
+	box-sizing: border-box;
 	max-width: 1120px;
 	min-width: 320px;
 	display: flex;
@@ -191,6 +169,7 @@ body {
 		display: block;
 		padding: 0 20px;
 		margin: 0 auto;
+		margin-top: -280px;
 	}
 	.cv__left-column {
 		padding-right: 0;
